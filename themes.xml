@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Schluessel" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#C62828</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FFDAD6</item>
+        <item name="colorOnPrimaryContainer">#410002</item>
+        <item name="colorSecondary">#455A64</item>
+    </style>
+
+    <style name="Theme.Schluessel.Camera" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#EF5350</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:windowBackground">#000000</item>
+    </style>
+</resources>

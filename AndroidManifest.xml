@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.camera.any" android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_key"
+        android:roundIcon="@drawable/ic_key"
+        android:label="Schlüssel-Scanner"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Schluessel">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Schluessel.Camera" />
+
+        <activity android:name=".ResultActivity" android:label="Ergebnis" />
+        <activity android:name=".DetailActivity" android:label="Schlüssel" />
+    </application>
+</manifest>
